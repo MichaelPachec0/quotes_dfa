@@ -65,5 +65,6 @@ mod tests {
         quote_collector.print_results();
         let results = quote_collector.return_results().collect::<Vec<String>>();
         println!("{results:?}");
+        assert_eq!(results.len(), 2);
     }
 }
